@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ingrid+Darling&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --main-color: #2196f3;
+        --main-color-alt: #1787e0;
+        --main-transition: 0.3s;
+        --main-padding-top: 100px;
+        --main-padding-bottom: 100px;
+        --section-background: #ececec;
+      }
+
+      .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      @media (min-width: 768px) {
+        .container {
+          width: 750px;
+        }
+      }
+      /* Medium */
+
+      @media (min-width: 992px) {
+        .container {
+          width: 970px;
+        }
+      }
+      /* Large */
+
+      @media (min-width: 1200px) {
+        .container {
+          width: 1170px;
+        }
+      }
+
+      .landing {
+        position: relative;
+      }
+
+      .landing::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -40px;
+        width: 100%;
+        height: 100%;
+        background-color: #830051;
+        z-index: -1;
+        transform: skewY(-6deg);
+        transform-origin: top left;
+      }
+
+      .landing .container {
+        min-height: calc(100vh - 72px);
+        display: flex;
+        align-items: center;
+        padding-bottom: 120px;
+      }
+
+      .landing .text {
+        flex: 1;
+      }
+
+      @media (max-width: 991px) {
+        .landing .text {
+          text-align: center;
+        }
+      }
+
+      .landing .text h1 {
+        line-height: 1.7;
+        margin: 5px 0 0;
+        color: #ffffff;
+        max-width: 500px;
+      }
+
+      .landing .text h2 {
+        line-height: 1.7;
+        margin: 5px 0 0;
+        color: #ffffff;
+        max-width: 500px;
+      }
+
+      @media (max-width: 991px) {
+        .landing .text h2 {
+          margin: 10px auto;
+        }
+        .landing .text h1 {
+          margin: 10px auto;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .landing .text h1 {
+          font-size: 18px;
+        }
+        .landing .text h2 {
+          font-size: 18px;
+        }
+      }
+
+      .landing .image img {
+        position: relative;
+        width: 200px;
+        animation: up-and-down 5s linear infinite;
+      }
+      /* @media (max-width: 991px) {
+            .landing .image {
+                display: none;
+            }
+        } */
+
+      @media (max-width: 991px) {
+        .end .text {
+          text-align: center;
+        }
+      }
+
+      .end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .end .text {
+        line-height: 1.7;
+        margin: 5px 0 0;
+        color: #000000;
+        font-family: "Ingrid Darling", cursive;
+        text-align: right;
+        font-size: 40px;
+        margin-left: 20px;
+      }
+
+      @media (max-width: 991px) {
+        .end .text {
+          margin: 10px auto;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .end .text h1 {
+          font-size: 10px;
+        }
+      }
+
+      .end img {
+        position: relative;
+        width: 200px;
+        padding-right: 20px;
+        text-align: center;
+        max-width: 50%;
+        height: auto;
+      }
+      /* @media (max-width: 991px) {
+            .end .image {
+                display: none;
+            }
+        } */
+
+      .video {
+        width: 60%;
+        text-align: center;
+        margin: auto;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="landing">
+      <div class="container">
+        <div class="text">
+          <h1>The Ultimate Answers Are Here...</h1>
+          <h2>DEEP DIVE & STAY TUNED!!</h2>
+        </div>
+        <div class="image">
+          <img src="https://i.postimg.cc/hP4srhHj/astrazeneca.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="video">
+      <iframe
+        src="https://player.vdocipher.com/v2/?otp=20160313versUSE323kcKJvxB6jNoftiWKUJeg3w0u20ABPB93mptT9vrcW5RmKd&playbackInfo=eyJ2aWRlb0lkIjoiMzA4NzRhZTliM2I4NDE4N2E2MDZjMWQ0MjY3MzZiNjcifQ=="
+        style="border: 0; height: 360px; width: 640px; max-width: 100%"
+        allowfullscreen="true"
+        allow="encrypted-media"
+      ></iframe>
+
+      <!-- <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+            padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+            border-radius: 8px; will-change: transform;">
+            <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFpBaoWApU&#x2F;watch?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+             </iframe>
+        </div> -->
+    </div>
+
+    <div class="end">
+      <img
+        src="https://i.postimg.cc/6Q6Ljp12/Astra-Zeneca-logo-d5722f358b5adb0158c4a01f960371d51ce1be1a.png"
+        alt=""
+      />
+      <p class="text">Medical Governce team</p>
+    </div>
+  </body>
+</html>
